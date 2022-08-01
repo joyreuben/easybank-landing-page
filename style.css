@@ -1,0 +1,195 @@
+@import url("https://fonts.google.com/specimen/Public+Sans");
+
+:root{
+    --dark-blue: hsl(233, 26%, 24%);
+    --lime-green: hsl(136, 65%, 51%);
+    --bright-cyan: hsl(192, 70%, 51%);
+    --grayish-blue: hsl(233, 8%, 62%);
+    --light-grayish-blue: hsl(220, 16%, 96%);
+    --very-light-gray: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%);
+
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+  background-color: var(--very-light-gray);
+    font-family: 'Public sans', sans-serif;
+    font-size:18px;
+    font-weight: 300;
+    color:var(--dark-blue);
+    margin: 0;
+    width: fit-content;
+}
+
+h1,
+h2,
+h3{
+    color:var(--dark-blue);
+    margin-top: 0;
+}
+
+p{
+    margin-top: 0;
+    color: var(--grayish-blue);
+}
+
+
+
+.header{
+    width: 100%;
+    height: 80px;
+    z-index: 100;
+    position: relative;
+    background-color: white;
+}
+
+.header-icon {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 2px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+
+  .header-top{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    background-color: white;
+    height: 50px;
+  }
+   .phone{
+    position: relative;
+   }
+ 
+
+   @media only screen and (min-width: 375px) {
+    .phone::before{
+      content: '';
+      position: absolute;
+      height:120%;
+      width:100%;
+      background-position: right top;
+      background: url("images/bg-intro-mobile.svg");
+      background-size: 100% 100%;
+      z-index: -2;
+  }
+  .header-link {
+    display:none;
+}
+.phone > img{
+  width: 100%;
+  height: 50%;
+  margin-top: -210px; 
+  z-index: 2;
+}
+.header{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  height: 90px;
+  z-index: 100;
+  position: relative;
+  background-color: white;
+
+}
+.hero{
+  text-align: center;
+}
+
+main{
+  text-align: center;
+  margin-top: 100px;
+}
+h1{
+  font-size: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+h3{
+  font-size: 30px;
+  margin-left: 50px;
+}
+p{
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 30px;
+}
+.section-title{
+  font-size: 45px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.content{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--light-grayish-blue);
+}
+.section-img{
+  width:20%;
+}
+.sub-section{
+  margin-top: 50px;
+}
+.content2{
+  margin-top: 100px;
+}
+.section2-img{
+width:90%;
+}
+.sub-section2{
+  
+background-color: white;
+margin-top:50px ;
+margin-bottom: 150px;
+}
+.section2-quote{
+  text-align: left;
+  font-size: 20px;
+}
+.section-wrap{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: left;
+}
+.section2-text{
+  font-size:25px;
+}
+}
+  
+
+
+
+
+
+
