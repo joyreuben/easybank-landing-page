@@ -92,7 +92,7 @@ p{
    }
  
 
-   @media screen and (max-width: 275px) {
+   @media only screen and (min-width: 275px) {
     .phone::before{
       content: '';
       position: absolute;
